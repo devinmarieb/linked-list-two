@@ -1,0 +1,23 @@
+.left {
+  position: relative;
+  display: inline-block;
+  height: 100vh;
+  width: 49%;
+  border: 1px solid purple;
+  vertical-align: top;
+}
+
+.right {
+  position: relative;
+  display: inline-block;
+  height: 100vh;
+  width: 50%;
+  border: 1px solid red;
+  vertical-align: top;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+}
