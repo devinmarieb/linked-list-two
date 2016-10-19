@@ -42,6 +42,10 @@ input {
   font-weight: 400;
 }
 
+input:focus, button:focus {
+  outline: none;
+}
+
 .error {
   margin: 10px auto;
   font-family: 'Open Sans', sans-serif;
@@ -56,6 +60,39 @@ input {
   font-size: 15pt;
   color: #CFD8DC;
   text-align: center;
+}
+
+.submit-button {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  font-size: 15pt;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  border: none;
+  width: 81%;
+  height: 35px;
+  margin: 30px auto;
+}
+
+.submit-button:hover {
+  background-color: #FFD773;
+}
+
+.clear-read {
+  display: block;
+  background-color: #FFC107;
+  color: #FFFFFF;
+  font-size: 10pt;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  border: none;
+  width: 30%;
+  height: 20px;
+  margin: 15px auto 10px auto;
+}
+
+.clear-read:hover {
+  background-color: #FFD773;
 }
 
 /*RIGHT SIDE*/
@@ -128,21 +165,6 @@ button.read {
   border-bottom: .5px solid #F2F4F4;
 }
 
-.submit-button {
-  background-color: #FFC107;
-  color: #FFFFFF;
-  font-size: 15pt;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  border: none;
-  width: 81%;
-  height: 35px;
-  margin: 30px auto;
-}
-
-.submit-button:hover {
-  background-color: #FFD773;
-}
 
 .read-button, .delete-button {
   color: #455A64;
@@ -171,4 +193,50 @@ a:hover {
   color: #455A64;
   border-bottom: .5px solid #FFC107;
   font-weight: 800;
+}
+
+@media screen and (max-width: 650px){
+  .left {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: inherit;
+  }
+
+  .title {
+    font-size: 30pt;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  input {
+    width: 250px;
+    margin: 10px auto;
+  }
+
+  .submit-button {
+    width: 250px;
+    margin: 10px auto;
+  }
+
+  .counter-container {
+    display: flex;
+  }
+
+  .total-bookmarks, .read-bookmarks, .unread-bookmarks {
+    font-size: 10pt;
+  }
+
+  .clear-read {
+    width: 250px;
+  }
+
+  .right {
+    background-color: #CFD8DC;
+    display: block;
+    width: 100%;
+  }
 }

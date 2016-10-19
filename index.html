@@ -5,6 +5,7 @@
     <title>Linked List</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
   </head>
   <body>
@@ -15,9 +16,12 @@
         <input class="url" type="text" name="url-field" placeholder="Website URL">
         <button class="submit-button" type="button" name="submit">Enter</button>
         <p class="error"></p>
-        <p class="total-bookmarks">Total Bookmarks: 0</p>
-        <p class="read-bookmarks">Read Bookmarks: 0</p>
-        <p class="unread-bookmarks">Unread Bookmarks: 0</p>
+        <aside class="counter-container">
+          <p class="total-bookmarks">Total Bookmarks: 0</p>
+          <p class="read-bookmarks">Read Bookmarks: 0</p>
+          <p class="unread-bookmarks">Unread Bookmarks: 0</p>
+        </aside>
+        <button class="clear-read" type="button" name="button">Clear All Read</button>
       </aside>
     </section>
     <section class="right">
