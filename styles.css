@@ -1,9 +1,16 @@
+body {
+  background-color: #CFD8DC;
+}
+
+/*LEFT SIDE*/
 .left {
   background-color: #455A64;
   display: inline-block;
   height: 100vh;
-  width: 49%;
+  width: 50%;
+  margin-right: -4px;
   vertical-align: top;
+  position: fixed;
 }
 
 .container {
@@ -12,8 +19,9 @@
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
+  margin-bottom: -10px;
 }
 
 .title {
@@ -34,13 +42,28 @@ input {
   font-weight: 400;
 }
 
+.error {
+  margin: 30px auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20pt;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*RIGHT SIDE*/
 .right {
   background-color: #CFD8DC;
   display: inline-block;
-  height: 100vh;
   width: 50%;
   vertical-align: top;
+  position: absolute;
+  right: 0;
 }
+
+ul {
+  background-color: #CFD8DC;
+}
+
 
 .new-card {
   position: relative;
@@ -51,6 +74,16 @@ input {
   height: inherit;
   border: 1px solid #607D8B;
   background-color: #FFFFFF;
+}
+
+.first-hr {
+  width: 90%;
+  border: .5px solid #CFD8DC;;
+}
+
+.second-hr {
+  width: 90%;
+  border: .5px solid #CFD8DC;;
 }
 
 .read {
@@ -67,10 +100,9 @@ button.read {
   font-size: 20pt;
   font-weight: 400;
   padding-bottom: 10px;
-  margin: 5px 10px;
+  margin: 10px 0 5px 20px ;
   width: 78%;
   word-wrap: break-word;
-  border-bottom: 1px solid #607D8B;
 }
 
 .url-name {
@@ -80,10 +112,11 @@ button.read {
   font-weight: 400;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 5px 10px;
-  border-bottom: 1px solid #607D8B;
-  width: 78%;
+  margin: 5px 0 0 20px ;
   word-wrap: break-word;
+  text-decoration: none;
+  width: 78%;
+  border-bottom: .5px solid #F2F4F4;
 }
 
 .submit-button {
@@ -98,7 +131,6 @@ button.read {
   margin: 30px auto;
 }
 
-
 .submit-button:hover {
   background-color: #FFD773;
 }
@@ -111,14 +143,10 @@ button.read {
   background: none;
   border: none;
   border-bottom: 1px solid #F2F4F4;
-  width: 50px;
 }
 
-
-.error {
-  margin: 30px auto;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20pt;
-  color: #FFFFFF;
-  text-align: center;
+.button-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px 5px 15px;
 }

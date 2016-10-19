@@ -7,7 +7,7 @@ function addCard(bookmark, url){
   var urlEntry = `<a class="url-name" href=${url}>${url}</a>`;
   var readButton = `<button class="read-button" type="button" name="read">Read</button>`;
   var deleteButton = `<button class="delete-button" type="button" name="delete">Delete</button>`;
-  var newCard = $('.card-section').append(`<li class="new-card">${bookmarkEntry}${urlEntry}${readButton}${deleteButton}</li>`);
+  var newCard = $('.card-section').append(`<li class="new-card">${bookmarkEntry}<hr class="first-hr">${urlEntry}<hr class="second-hr"><section class="button-section">${readButton}${deleteButton}</section></li>`);
 }
 
 function checkFields(bookmark, url){
