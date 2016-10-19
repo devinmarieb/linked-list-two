@@ -26,6 +26,11 @@ function countReadBookmarks(){
   $('.read-bookmarks').text('Read Bookmarks: ' + readCounter);
 }
 
+function countUnreadBookmarks(){
+  var unreadCounter = $('li').length - $('li.read').length;
+  $('.unread-bookmarks').text('Unread Bookmarks: ' + unreadCounter);
+}
+
 function checkFields(bookmark, url){
   if(bookmark === '' || url === ''){
     $('.submit-button').disabled = true;
@@ -46,16 +51,19 @@ $('.submit-button').on('click', function(){
   checkFields(bookmark, url);
   clearFields(bookmark, url);
   countBookmarks();
+  countUnreadBookmarks();
 })
 
 $('ul').on('click', '.read-button', function(){
   $(this).closest('li').toggleClass('read');
   $(this).closest('button').toggleClass('read');
   countReadBookmarks();
+  countUnreadBookmarks();
 })
 
 $('ul').on('click', '.delete-button', function(){
   $(this).closest('li').remove();
   countBookmarks();
   countReadBookmarks();
+  countUnreadBookmarks();
 })
