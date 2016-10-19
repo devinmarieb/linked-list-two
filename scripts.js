@@ -19,12 +19,16 @@ function checkFields(bookmark, url){
   }
 }
 
+function clearFields(){
+  bookmarkField.val('');
+  urlField.val('');
+}
+
 $('.submit-button').on('click', function(){
   var bookmark = bookmarkField.val();
   var url = urlField.val();
   checkFields(bookmark, url);
-  var bookmark = bookmarkField.val('');
-  var url = urlField.val('');
+  clearFields(bookmark, url);
 })
 
 $('ul').on('click', '.read-button', function(){
