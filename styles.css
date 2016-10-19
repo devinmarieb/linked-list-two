@@ -16,12 +16,14 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  margin-top: 30%;
+
 }
 
 .logo {
   width: 55px;
   height: 55px;
-  margin-bottom: -10px;
+  margin: 0 10px -10px 10px;
 }
 
 .title {
@@ -149,4 +151,17 @@ button.read {
   display: flex;
   justify-content: space-between;
   margin: 0 15px 5px 15px;
+}
+
+.read-button:hover, .delete-button:hover {
+  color: #455A64;
+  border-bottom: 1px solid #FFC107;
+  font-weight: 800;
+
+}
+
+a:hover {
+  color: #455A64;
+  border-bottom: .5px solid #FFC107;
+  font-weight: 800;
 }
