@@ -58,6 +58,38 @@ input {
   text-align: center;
 }
 
+.submit-button {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  font-size: 15pt;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  border: none;
+  width: 81%;
+  height: 35px;
+  margin: 30px auto;
+}
+
+.submit-button:hover {
+  background-color: #FFD773;
+}
+
+.clear-read {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  font-size: 10pt;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  border: none;
+  width: 30%;
+  height: 20px;
+  margin: 3px auto 10px auto;
+}
+
+.clear-read:hover {
+  background-color: #FFD773;
+}
+
 /*RIGHT SIDE*/
 .right {
   background-color: #CFD8DC;
@@ -128,21 +160,6 @@ button.read {
   border-bottom: .5px solid #F2F4F4;
 }
 
-.submit-button {
-  background-color: #FFC107;
-  color: #FFFFFF;
-  font-size: 15pt;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  border: none;
-  width: 81%;
-  height: 35px;
-  margin: 30px auto;
-}
-
-.submit-button:hover {
-  background-color: #FFD773;
-}
 
 .read-button, .delete-button {
   color: #455A64;

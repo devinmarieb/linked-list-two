@@ -67,3 +67,7 @@ $('ul').on('click', '.delete-button', function(){
   countReadBookmarks();
   countUnreadBookmarks();
 })
+
+$('.clear-read').on('click', function(){
+  $('li.read').remove();
+})
