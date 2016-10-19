@@ -16,8 +16,6 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 30%;
-
 }
 
 .logo {
@@ -45,10 +43,18 @@ input {
 }
 
 .error {
-  margin: 30px auto;
+  margin: 10px auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 20pt;
   color: #FFFFFF;
+  text-align: center;
+}
+
+.total-bookmarks, .read-bookmarks {
+  margin: 15px auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15pt;
+  color: #CFD8DC;
   text-align: center;
 }
 
@@ -94,6 +100,7 @@ ul {
 
 button.read {
   color: #F05A28;
+  font-weight: 800;
 }
 
 .bookmark-name {
