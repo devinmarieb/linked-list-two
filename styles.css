@@ -1,11 +1,9 @@
 .left {
-  position: relative;
   display: inline-block;
   height: 100vh;
   width: 49%;
   border: 1px solid purple;
   vertical-align: top;
-  /*float: left;*/
 }
 
 .right {
@@ -14,10 +12,10 @@
   width: 50%;
   border: 1px solid red;
   vertical-align: top;
-  /*float: right;*/
 }
 
 .new-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 20px auto;
@@ -25,4 +23,12 @@
   height: 150px;
   border: 1px solid black;
 
+}
+
+.bookmark-name {
+  color: magenta;
+}
+
+.url-name {
+  color: purple;
 }
