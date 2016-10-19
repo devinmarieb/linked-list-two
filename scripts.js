@@ -13,7 +13,7 @@ function addCard(bookmark, url){
 function checkFields(bookmark, url){
   if(bookmark === '' || url === ''){
     $('.submit-button').disabled = true;
-    $('.error').text('Please enter a bookmark and url!');
+    $('.error').text('¡ Please enter a bookmark and URL !');
   } else {
     addCard(bookmark, url);
   }
@@ -33,6 +33,7 @@ $('.submit-button').on('click', function(){
 
 $('ul').on('click', '.read-button', function(){
   $(this).closest('li').toggleClass('read');
+  $(this).closest('button').toggleClass('read');
 })
 
 $('ul').on('click', '.delete-button', function(){
