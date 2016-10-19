@@ -2,7 +2,7 @@ var bookmarkField = $('.bookmark');
 var urlField = $('.url');
 
 function addCard(bookmark, url){
-  var newCard = $('.card-section').append(
+  var newCard = $('.card-section').prepend(
     `<li class="new-card">
     <p class="bookmark-name">${bookmark}</p>
     <hr class="first-hr">
