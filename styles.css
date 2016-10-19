@@ -50,7 +50,7 @@ input {
   text-align: center;
 }
 
-.total-bookmarks, .read-bookmarks {
+.total-bookmarks, .read-bookmarks, .unread-bookmarks {
   margin: 15px auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 15pt;

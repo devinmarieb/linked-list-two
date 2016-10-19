@@ -1,30 +1,30 @@
 var bookmarkField = $('.bookmark');
 var urlField = $('.url');
-var counter = $('li').length;
-var readCounter = $('.read').length;
+
+function addCard(bookmark, url){
+  var newCard = $('.card-section').append(
+    `<li class="new-card">
+    <p class="bookmark-name">${bookmark}</p>
+    <hr class="first-hr">
+    <a class="url-name" href=${url}>${url}</a>
+    <hr class="second-hr">
+    <section class="button-section">
+    <button class="read-button" type="button" name="read">Read</button>
+    <button class="delete-button" type="button" name="delete">Delete</button>
+    </section>
+    </li>`
+  );
+}
 
 function countBookmarks(){
-  counter++;
+  var counter = $('li').length;
   $('.total-bookmarks').text('Total Bookmarks: ' + counter);
 }
 
 function countReadBookmarks(){
-  $('.read-bookmarks').text('Read Bookmarks: ' + readCounter.val());
+  var readCounter = $('li.read').length;
+  $('.read-bookmarks').text('Read Bookmarks: ' + readCounter);
 }
-
-
-function addCard(bookmark, url){
-  var newCard = $('.card-section').append(`<li class="new-card">
-                                            <p class="bookmark-name">${bookmark}</p>
-                                            <hr class="first-hr">
-                                            <a class="url-name" href=${url}>${url}</a>
-                                            <hr class="second-hr">
-                                            <section class="button-section">
-                                              <button class="read-button" type="button" name="read">Read</button>
-                                              <button class="delete-button" type="button" name="delete">Delete</button>
-                                            </section>
-                                          </li>`);
-                              }
 
 function checkFields(bookmark, url){
   if(bookmark === '' || url === ''){
@@ -56,6 +56,6 @@ $('ul').on('click', '.read-button', function(){
 
 $('ul').on('click', '.delete-button', function(){
   $(this).closest('li').remove();
-  counter--;
-  $('.total-bookmarks').text('Total Bookmarks: ' + counter);
+  countBookmarks();
+  countReadBookmarks();
 })
