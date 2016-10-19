@@ -1,23 +1,124 @@
 .left {
-  position: relative;
+  background-color: #455A64;
   display: inline-block;
   height: 100vh;
   width: 49%;
-  border: 1px solid purple;
   vertical-align: top;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  font-size: 35pt;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 30px auto;
+  text-align: center;
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  margin: 30px auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20pt;
+  font-weight: 400;
 }
 
 .right {
-  position: relative;
+  background-color: #CFD8DC;
   display: inline-block;
   height: 100vh;
   width: 50%;
-  border: 1px solid red;
   vertical-align: top;
 }
 
-.card {
-  width: 300px;
-  height: 200px;
-  border: 1px solid black;
+.new-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 80%;
+  height: inherit;
+  border: 1px solid #607D8B;
+  background-color: #FFFFFF;
+}
+
+.read {
+  background-color: #F2F4F4;
+}
+
+button.read {
+  color: #F05A28;
+}
+
+.bookmark-name {
+  color: #455A64;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20pt;
+  font-weight: 400;
+  padding-bottom: 10px;
+  margin: 5px 10px;
+  width: 78%;
+  word-wrap: break-word;
+  border-bottom: 1px solid #607D8B;
+}
+
+.url-name {
+  color: #607D8B;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15pt;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px 10px;
+  border-bottom: 1px solid #607D8B;
+  width: 78%;
+  word-wrap: break-word;
+}
+
+.submit-button {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  font-size: 15pt;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  border: none;
+  width: 81%;
+  height: 35px;
+  margin: 30px auto;
+}
+
+
+.submit-button:hover {
+  background-color: #FFD773;
+}
+
+.read-button, .delete-button {
+  color: #455A64;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #F2F4F4;
+  width: 50px;
+}
+
+
+.error {
+  margin: 30px auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20pt;
+  color: #FFFFFF;
+  text-align: center;
 }
