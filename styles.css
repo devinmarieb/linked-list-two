@@ -44,6 +44,7 @@ input {
 
 input:focus, button:focus {
   outline: none;
+  border: 2px solid #FFC107;
 }
 
 .error {
