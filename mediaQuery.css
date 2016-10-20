@@ -1,3 +1,19 @@
+@media screen and (max-width: 840px){
+  .clear-read {
+    margin: 5px auto;
+  }
+
+  input {
+    margin: 10px auto;
+  }
+
+  .submit-button {
+    margin: 10px auto;
+  }
+}
+
+
+
 @media screen and (max-width: 650px){
   .left {
     display: block;

@@ -19,15 +19,15 @@ body {
 }
 
 .logo {
-  height: 55px;
-  margin: 0 10px -10px 10px;
-  width: 55px;
+  height: 75px;
+  margin: 0 10px -15px 10px;
+  width: 75px;
 }
 
 .title {
   color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
-  font-size: 35pt;
+  font-size: 45pt;
   font-weight: 800;
   margin: 30px auto;
   text-align: center;
