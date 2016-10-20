@@ -38,7 +38,6 @@ function checkFields(bookmark, url){
   } else {
     addCard(bookmark, url);
     $('.error').text('');
-
   }
 }
 
