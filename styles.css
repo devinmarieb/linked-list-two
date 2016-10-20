@@ -42,7 +42,7 @@ input {
   width: 80%;
 }
 
-input:focus, button:focus {
+input:focus {
   border: 2px solid #FFC107;
   outline: none;
 }
