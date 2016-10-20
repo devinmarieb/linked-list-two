@@ -37,6 +37,8 @@ function checkFields(bookmark, url){
     $('.error').text('¡ Please enter a title and URL !');
   } else {
     addCard(bookmark, url);
+    $('.error').text('');
+
   }
 }
 

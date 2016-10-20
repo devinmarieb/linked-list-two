@@ -7,10 +7,10 @@ body {
   background-color: #455A64;
   display: inline-block;
   height: 100vh;
-  width: 50%;
   margin-right: -4px;
-  vertical-align: top;
   position: fixed;
+  vertical-align: top;
+  width: 50%;
 }
 
 .container {
@@ -19,60 +19,60 @@ body {
 }
 
 .logo {
-  width: 55px;
   height: 55px;
   margin: 0 10px -10px 10px;
+  width: 55px;
 }
 
 .title {
-  font-size: 35pt;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
   color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35pt;
+  font-weight: 800;
   margin: 30px auto;
   text-align: center;
 }
 
 input {
-  width: 80%;
-  height: 30px;
-  margin: 30px auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 20pt;
   font-weight: 400;
+  height: 30px;
+  margin: 30px auto;
+  width: 80%;
 }
 
 input:focus, button:focus {
-  outline: none;
   border: 2px solid #FFC107;
+  outline: none;
 }
 
 .error {
-  margin: 10px auto;
+  color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
   font-size: 20pt;
-  color: #FFFFFF;
+  margin: 10px auto;
   text-align: center;
 }
 
 .total-bookmarks, .read-bookmarks, .unread-bookmarks {
-  margin: 15px auto;
+  color: #CFD8DC;
   font-family: 'Open Sans', sans-serif;
   font-size: 15pt;
-  color: #CFD8DC;
+  margin: 15px auto;
   text-align: center;
 }
 
 .submit-button {
   background-color: #FFC107;
-  color: #FFFFFF;
-  font-size: 15pt;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
   border: none;
-  width: 81%;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15pt;
+  font-weight: 800;
   height: 35px;
   margin: 30px auto;
+  width: 81%;
 }
 
 .submit-button:hover {
@@ -80,16 +80,16 @@ input:focus, button:focus {
 }
 
 .clear-read {
-  display: block;
   background-color: #FFC107;
-  color: #FFFFFF;
-  font-size: 10pt;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
   border: none;
-  width: 30%;
+  color: #FFFFFF;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  font-weight: 400;
   height: 20px;
   margin: 15px auto 10px auto;
+  width: 30%;
 }
 
 .clear-read:hover {
@@ -100,10 +100,10 @@ input:focus, button:focus {
 .right {
   background-color: #CFD8DC;
   display: inline-block;
-  width: 50%;
-  vertical-align: top;
   position: absolute;
   right: 0;
+  vertical-align: top;
+  width: 50%;
 }
 
 ul {
@@ -112,24 +112,24 @@ ul {
 
 
 .new-card {
-  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid #607D8B;
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
-  width: 80%;
   height: inherit;
-  border: 1px solid #607D8B;
-  background-color: #FFFFFF;
+  margin: 20px auto;
+  position: relative;
+  width: 80%;
 }
 
 .first-hr {
-  width: 90%;
   border: .5px solid #CFD8DC;;
+  width: 90%;
 }
 
 .second-hr {
-  width: 90%;
   border: .5px solid #CFD8DC;;
+  width: 90%;
 }
 
 .read {
@@ -146,35 +146,35 @@ button.read {
   font-family: 'Open Sans', sans-serif;
   font-size: 20pt;
   font-weight: 400;
-  padding-bottom: 10px;
   margin: 10px 0 5px 20px ;
+  padding-bottom: 10px;
   width: 78%;
   word-wrap: break-word;
 }
 
 .url-name {
+  border-bottom: .5px solid #F2F4F4;
   color: #607D8B;
   font-family: 'Open Sans', sans-serif;
   font-size: 15pt;
   font-weight: 400;
-  padding-top: 10px;
+  margin: 5px 0 0 20px;
   padding-bottom: 10px;
-  margin: 5px 0 0 20px ;
-  word-wrap: break-word;
+  padding-top: 10px;
   text-decoration: none;
   width: 78%;
-  border-bottom: .5px solid #F2F4F4;
+  word-wrap: break-word;
 }
 
 
 .read-button, .delete-button {
-  color: #455A64;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 10pt;
   background: none;
   border: none;
   border-bottom: 1px solid #F2F4F4;
+  color: #455A64;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  font-weight: 400;
 }
 
 .button-section {
@@ -184,14 +184,14 @@ button.read {
 }
 
 .read-button:hover, .delete-button:hover {
-  color: #455A64;
   border-bottom: 1px solid #FFC107;
+  color: #455A64;
   font-weight: 800;
 
 }
 
 a:hover {
-  color: #455A64;
   border-bottom: .5px solid #FFC107;
+  color: #455A64;
   font-weight: 800;
 }
