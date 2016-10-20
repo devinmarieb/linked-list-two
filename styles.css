@@ -52,6 +52,7 @@ input:focus, button:focus {
   font-family: 'Open Sans', sans-serif;
   font-size: 20pt;
   margin: 10px auto;
+  opacity: 0;
   text-align: center;
 }
 

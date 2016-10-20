@@ -34,10 +34,10 @@ function countUnreadBookmarks(){
 function checkFields(bookmark, url){
   if(bookmark === '' || url === ''){
     $('.submit-button').disabled = true;
-    $('.error').text('¡ Please enter a title and URL !');
+    $('.error').css('opacity', '1');
   } else {
     addCard(bookmark, url);
-    $('.error').text('');
+    $('.error').css('opacity', '0');
   }
 }
 
